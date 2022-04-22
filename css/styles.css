@@ -598,6 +598,7 @@ h2 {
   flex-wrap: wrap;
 }
 
+
 .footer-subscribe-title {
   
   font-style: normal;
@@ -607,6 +608,11 @@ h2 {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--body-background-color);
+}
+.footer-subscribe label{
+  display: flex;
+  
+  
 }
 .footer-subscribe input {
   display: inline-block;
@@ -634,6 +640,8 @@ h2 {
   align-content: baseline;
   justify-content: space-evenly;
   
+  margin-top: 20px;
+  margin-left: 12px;
   padding: 13px 28px 13px 29px;
   font-weight: 700;
  
