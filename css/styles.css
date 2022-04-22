@@ -593,14 +593,11 @@ h2 {
 /*footer-subscribe*/
 
 .footer-subscribe {
-  
   margin-left: 93px;
   flex-wrap: wrap;
 }
 
-
 .footer-subscribe-title {
-  
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -609,10 +606,8 @@ h2 {
   text-transform: uppercase;
   color: var(--body-background-color);
 }
-.footer-subscribe label{
+.footer-subscribe label {
   display: flex;
-  
-  
 }
 .footer-subscribe input {
   display: inline-block;
@@ -634,17 +629,16 @@ h2 {
 }
 
 .footer-subscribe-button {
-  
   display: flex;
   align-items: center;
   align-content: baseline;
   justify-content: space-evenly;
-  
+
   margin-top: 20px;
   margin-left: 12px;
   padding: 13px 28px 13px 29px;
   font-weight: 700;
- 
+
   letter-spacing: 0.06em;
   color: var(--body-background-color);
 
@@ -662,9 +656,9 @@ h2 {
   justify-content: center;
   align-items: center;
   margin: 0;
-  
 }
-
+.footer-subscribe-button:hover {
+  cursor: pointer;
 }
 .backdrop {
   position: fixed;
