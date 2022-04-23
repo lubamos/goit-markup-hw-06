@@ -606,7 +606,7 @@ h2 {
   text-transform: uppercase;
   color: var(--body-background-color);
 }
-.footer-subscribe label {
+.footer-subscribe form {
   display: flex;
 }
 .footer-subscribe input {
@@ -660,6 +660,8 @@ h2 {
 .footer-subscribe-button:hover {
   cursor: pointer;
 }
+
+/* backdrop */
 .backdrop {
   position: fixed;
   top: 0;
@@ -687,14 +689,16 @@ h2 {
 
   min-height: 581px;
   min-width: 528px;
-  padding-top: 8px;
-  padding-right: 8px;
-  padding-bottom: 543px;
-  padding-left: 490px;
 
   background-color: var(--body-background-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
 }
 .m-button {
+  position: absolute;
+  right: 8px;
+  top: 8px;
   padding: 0;
   margin: 0;
   border-radius: 50%;
@@ -705,6 +709,54 @@ h2 {
   max-width: 100%;
   height: auto;
 }
+/*backdrop subscribe form */
+.form-modal {
+  padding: 40px;
+  width: 528px;
+}
+.subscribe-form {
+  margin-bottom: 12px;
+
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--background-color);
+}
+.form-field {
+  position: relative;
+  margin-bottom: 20px;
+}
+.form-label {
+  top: 0;
+  left: 0;
+  margin-bottom: 7px;
+
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+
+  letter-spacing: 0.01em;
+
+  color: var(--text-color);
+}
+.form-label1 {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+}
+.form-input {
+  width: 100%;
+  margin: 0;
+  padding: 10px 20px;
+  font: inherit;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
 /* Portfolio */
 .section-portfolio {
   padding-top: 94px;
