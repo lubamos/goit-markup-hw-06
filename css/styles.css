@@ -697,18 +697,30 @@ h2 {
 }
 .m-button {
   position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   right: 8px;
   top: 8px;
   padding: 0;
   margin: 0;
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
-  border: none;
+
+  fill: black;
+  background-color: white;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  cursor: pointer;
 }
-.img-modal {
-  display: block;
-  max-width: 100%;
-  height: auto;
+
+.m-button:hover,
+.m-button:focus {
+  fill: #188ce8;
 }
+
 /*backdrop subscribe form */
 .form-modal {
   padding: 40px;
@@ -719,7 +731,7 @@ h2 {
 
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
 
@@ -742,19 +754,95 @@ h2 {
 
   color: var(--text-color);
 }
-.form-label1 {
-  position: absolute;
-  top: 50%;
-  left: 15px;
-}
 .form-input {
   width: 100%;
   margin: 0;
-  padding: 10px 20px;
+  padding: 12px 42px;
+  font: inherit;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+
+  border-radius: 4px;
+  cursor: pointer;
+
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.form-input-img {
+  position: absolute;
+  display: inline-block;
+
+  top: 50%;
+  left: 15px;
+}
+
+.form-input:hover,
+.form-input:focus,
+.form-comments:hover,
+.form-comments:focus {
+  border: 1px solid var(--hover-color);
+  fill: var(--hover-color);
+}
+.form-input:focus + .form-input-img,
+.form-input:hover + .form-input-img {
+  fill: var(--hover-color);
+}
+.form-comments {
+  width: 100%;
+  margin: 0;
+  padding: 12px 16px;
   font: inherit;
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
   border-radius: 4px;
+}
+.form-accept {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+.acceptation {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.checkbox {
+  margin-bottom: 30px;
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+
+  color: var(--text-color);
+}
+.conditions {
+  color: var(--hover-color);
+}
+
+.form-accept-button {
+  display: inline-block;
+  margin: 0 auto;
+  align-items: center;
+  min-width: 200px;
+  min-height: 50px;
+
+  color: var(--body-background-color);
+  background-color: var(--hover-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+
+  cursor: pointer;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.form-accept-button:hover,
+.form-accept-button:focus {
+  background-color: var(--hero-button-fover);
 }
 
 /* Portfolio */
